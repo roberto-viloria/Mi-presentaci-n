@@ -1,0 +1,55 @@
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="MiPresentacion.MainWindow"
+        Title="MiPresentacion"
+        Width="500"
+        Height="550"
+        WindowStartupLocation="CenterScreen">
+
+    <ScrollViewer>
+        <StackPanel Margin="30" Spacing="15">
+
+            <TextBlock Text="Mi primera aplicación gráfica"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       TextWrapping="Wrap"/>
+
+            <TextBlock Text="Nombre:"/>
+            <TextBox x:Name="TxtNombre"
+                     Watermark="Escribe tu nombre"/>
+
+            <TextBlock Text="Apellido:"/>
+            <TextBox x:Name="TxtApellido"
+                     Watermark="Escribe tu apellido"/>
+
+            <TextBlock Text="Edad:"/>
+            <TextBox x:Name="TxtEdad"
+                     Watermark="Escribe tu edad"/>
+
+            <StackPanel Orientation="Horizontal"
+                        Spacing="10"
+                        HorizontalAlignment="Center">
+
+                <Button Content="Presentarme"
+                        Click="BtnPresentarme_Click"/>
+
+                <Button Content="Limpiar"
+                        Click="BtnLimpiar_Click"/>
+
+            </StackPanel>
+
+            <Button Content="Cambiar saludo"
+                    HorizontalAlignment="Center"
+                    Click="BtnCambiarSaludo_Click"/>
+
+            <TextBlock x:Name="TxtResultado"
+                       Text="Completa tus datos y presiona Presentarme."
+                       TextWrapping="Wrap"
+                       FontSize="16"
+                       Margin="0,15,0,0"/>
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>
