@@ -52,7 +52,7 @@ dotnet run
 
 ## Reflexión: XAML y C#
 
-**¿Cuál es la función de `MainWindow.axaml` y `MainWindow.axaml.cs`, y cómo se relacionan mediante `x` y los eventos `Click`?**
+¿Cuál es la función de MainWindow.axaml y MainWindow.axaml.cs, y cómo se relacionan mediante x y los eventos Click para permitir que el usuario interactúe con la aplicación?
 
 `MainWindow.axaml` describe la ventana y su interfaz: allí se declaran los controles, su distribución y los nombres de los métodos que responden a los eventos `Click`. `MainWindow.axaml.cs` contiene la lógica en C#: inicializa la ventana, valida los datos y define qué ocurre al pulsar cada botón.
 
